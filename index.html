@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PANEL FREE FIRE| Premium Game Enhancement Suite</title>
     <style>
+        
         /* Modern CSS Reset */
         :root {
             --primary: #003cff;
@@ -962,6 +963,188 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!DOCTYPE html>
+    <html lang="ar">
+    <head>
+      <meta charset="UTF-8">
+      <title>خلفية متساقطة لشعار نسرين</title>
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+          background: radial-gradient(circle at center, #ccff00 0%, #000 90%);
+          font-family: Arial, sans-serif;
+          overflow-x: hidden;
+          position: relative;
+          z-index: 1;
+        }
+    
+        /* الحاوية في الخلفية */
+        .background-logo-fall {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: 0; /* تأكد أنها بالخلفية */
+          overflow: hidden;
+        }
+    
+        .logo-fall {
+          position: absolute;
+          top: -50px;
+          width: 40px;
+          height: auto;
+          opacity: 0.07;
+          animation: fall linear infinite;
+        }
+    
+        @keyframes fall {
+          0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 0.1;
+          }
+          100% {
+            transform: translateY(110vh) rotate(360deg);
+            opacity: 0;
+          }
+        }
+      </style>
+    </head>
+    <body>
+    
+      <!-- حاوية الخلفية للشعار المتساقط -->
+      <div class="background-logo-fall" id="background-logo-fall"></div>
+    
+      <!-- المحتوى الأمامي -->
+       </header>
+    
+      <script>
+        const container = document.getElementById('background-logo-fall');
+    
+        for (let i = 0; i < 40; i++) {
+          const flake = document.createElement('img');
+          flake.src = 'IMAGE/RY.png'; // تأكد من وجود الصورة في هذا المسار
+          flake.className = 'logo-fall';
+    
+          // إعدادات عشوائية
+          const left = Math.random() * 100; // من 0 إلى 100%
+          const duration = 8 + Math.random() * 7; // من 8 إلى 15 ثانية
+          const delay = Math.random() * 5; // من 0 إلى 5 ثوانٍ
+          const size = 20 + Math.random() * 30; // حجم من 20 إلى 50 بكسل
+    
+          flake.style.left = `${left}%`;
+          flake.style.animationDuration = `${duration}s`;
+          flake.style.animationDelay = `${delay}s`;
+          flake.style.width = `${size}px`;
+    
+          container.appendChild(flake);
+        }
+      </script>
+    
+    </body>
+    </html>
+    <!DOCTYPE html>
+    <html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>تأثير الجسيمات مع الثلوج</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <style>
+      
+    
+            canvas {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+        </style>
+        
+    </head>
+    <body>
+    
+        <!-- إضافة الشعار -->
+    
+        <script>
+            let scene = new THREE.Scene();
+            let camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            let renderer = new THREE.WebGLRenderer({ alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+    
+            // إعداد الجسيمات (النجوم)
+            let particlesGeometry = new THREE.BufferGeometry();
+            let particlesCount = 0; // زيادة عدد الجسيمات
+            let positions = new Float32Array(particlesCount * 3);
+            let colors = new Float32Array(particlesCount * 3);
+    
+            for (let i = 0; i < particlesCount * 3; i++) {
+                positions[i] = (Math.random() - 0.5) * 1000;
+                colors[i] = Math.random();
+            }
+    
+            particlesGeometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+            particlesGeometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+    
+            let particlesMaterial = new THREE.PointsMaterial({
+                size: 2,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.8
+            });
+    
+            let particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+            scene.add(particlesMesh);
+    
+            // إعداد الجسيمات (الثلوج)
+            let snowGeometry = new THREE.BufferGeometry();
+            let snowCount = 300; // زيادة عدد الجسيمات
+            let snowPositions = new Float32Array(snowCount * 3);
+    
+            for (let i = 0; i < snowCount * 3; i++) {
+                snowPositions[i] = (Math.random() - 0.5) * 1000;
+            }
+    
+            snowGeometry.setAttribute("position", new THREE.BufferAttribute(snowPositions, 3));
+    
+            let snowMaterial = new THREE.PointsMaterial({
+                color: 0xffffff, // لون الثلج أبيض
+                size: 1.5,
+                transparent: true,
+                opacity: 0.8
+            });
+    
+            let snowMesh = new THREE.Points(snowGeometry, snowMaterial);
+            scene.add(snowMesh);
+    
+            camera.position.z = 5;
+    
+            function animateParticles() {
+                particlesMesh.rotation.y += 0.001;
+                particlesMesh.rotation.x += 0.001;
+    
+                let snowPositions = snowGeometry.attributes.position.array;
+                for (let i = 1; i < snowPositions.length; i += 3) {
+                    snowPositions[i] -= 2; // حركة الثلوج للأسفل
+                    if (snowPositions[i] < -500) snowPositions[i] = 500; // إعادة تعيين الموضع للأعلى
+                }
+                snowGeometry.attributes.position.needsUpdate = true;
+    
+                renderer.render(scene, camera);
+                requestAnimationFrame(animateParticles);
+            }
+    
+            animateParticles();
+    
+      
+        </script>
+    
+    </body>
+    </html>
     <!-- Header -->
     <header>
         <div class="container header-content">
@@ -977,6 +1160,7 @@
                     <li><a href="#how-it-works">How It Works</a></li>
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#faq">FAQ</a></li>
+                    <li><a href="signup.html">Payment Method</a></li>
                 </ul>
             </nav>
       
@@ -991,6 +1175,7 @@
             <div class="hero-buttons">
                 <a href="#pricing" class="btn btn-primary">Get Started Now</a>
                 <a href="#features" class="btn btn-outline">Explore Features</a>
+
             </div>
         </div>
     </section>
@@ -1122,7 +1307,7 @@
                             <li><i class="fas fa-check"></i> Priority Support</li>
                             <li><i class="fas fa-check"></i> Weekly Updates</li>
                         </ul>
-                        <a href="https://discord.gg/MhpEhTV5Nc" class="btn btn-outline">Choose Plan</a>
+                        <a href="signup.html" class="btn btn-outline">Choose Plan</a>
                     </div>
                 </div>
                 
@@ -1142,7 +1327,7 @@
                             <li><i class="fas fa-check"></i> Priority Support</li>
                             <li><i class="fas fa-check"></i> Daily Updates</li>
                         </ul>
-                        <a href="https://discord.gg/MhpEhTV5Nc" class="btn btn-primary">Choose Plan</a>
+                        <a href="signup.html" class="btn btn-primary">Choose Plan</a>
                     </div>
                 </div>
                 
@@ -1162,7 +1347,7 @@
                             <li><i class="fas fa-check"></i> Exclusive Features</li>
                             <li><i class="fas fa-check"></i> Custom Scripts</li>
                         </ul>
-                        <a href="https://discord.gg/MhpEhTV5Nc" class="btn btn-outline">Choose Plan</a>
+                        <a href="signup.html" class="btn btn-outline">Choose Plan</a>
                     </div>
                 </div>
             </div>
