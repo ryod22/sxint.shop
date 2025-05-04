@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="IMAGE/RY.png">
+    <title>RYOD X66</title>
+</head>
+
+      
+    </header>
+
+
+
+    <!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>الدفع الإلكتروني</title>
+      <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <style>
+        
+        :root {
+          --primary: #3437db;
+          --primary-hover: #15ff00;
+          --light-bg: #f8f9fa;
+          --card-bg: #ffffff;
+          --border-color: #e0e0e0;
+          --text-dark: #ffffff;
+          --text-gray: #7f8c8d;
+        }
+        
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+        
+        body {
+          font-family: 'Tajawal', sans-serif;
+          background: var(--light-bg);
+          color: var(--text-dark);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          padding: 15px;
+          
+        }
+        
+        .payment-card {
+          background: var(--card-bg);
+          border-radius: 12px;
+          padding: 25px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+          border: 1px solid var(--border-color);
+          width: 100%;
+          max-width: 400px;
+        }
+        
+        .payment-header {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        
+        .payment-header h2 {
+          font-size: 22px;
+          font-weight: 700;
+          color: var(--text-dark);
+          margin-bottom: 8px;
+        }
+        
+        .payment-header p {
+          color: var(--text-gray);
+          font-size: 14px;
+        }
+        
+        .methods {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-bottom: 20px;
+        }
+        
+        .method {
+          background: var(--card-bg);
+          color: var(--text-dark);
+          border: 1px solid var(--border-color);
+          border-radius: 8px;
+          padding: 12px 15px;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          font-size: 15px;
+        }
+        
+        .method img {
+          height: 25px;
+          width: 25px;
+          object-fit: contain;
+        }
+        
+        .method span {
+          flex-grow: 1;
+        }
+        
+        .method .check-icon {
+          color: var(--primary);
+          opacity: 0;
+          font-size: 16px;
+        }
+        
+        .method:hover, .method.active {
+          border-color: var(--primary);
+          background: rgba(52, 152, 219, 0.05);
+        }
+        
+        .method.active .check-icon {
+          opacity: 1;
+        }
+        
+        .payment-details {
+          background: rgba(52, 152, 219, 0.05);
+          border-radius: 8px;
+          padding: 15px;
+          margin-top: 15px;
+          border: 1px solid var(--primary);
+          font-size: 14px;
+          display: none;
+        }
+        
+        .payment-details p {
+          margin-bottom: 10px;
+          line-height: 1.5;
+        }
+        
+        .payment-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          margin-top: 10px;
+          padding: 10px 15px;
+          background: var(--primary);
+          color: white;
+          border-radius: 6px;
+          text-decoration: none;
+          font-size: 14px;
+          transition: all 0.2s;
+        }
+        
+        .payment-link:hover {
+          background: var(--primary-hover);
+        }
+        
+        .security-badge {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          margin-top: 20px;
+          padding-top: 15px;
+          border-top: 1px solid var(--border-color);
+          color: var(--text-gray);
+          font-size: 13px;
+        }
+        
+        .security-badge i {
+          color: var(--primary);
+        }
+        
+      </style>
+    </head>
+    <body>
+
+
+
+
+
+
+        <!DOCTYPE html>
+        <html lang="ar" dir="rtl">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>معرض الصور مع زر Download</title>
+          <style>
+            :root {
+              --primary-color: #3498db;
+              --primary-hover: #2980b9;
+            
+              --border-radius: 12px;
+            }
+        
+            * {
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+            }
+        
+            body {
+              background-color: var(--background);
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              min-height: 100vh;
+              padding: 40px 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+        
+            .container {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 40px;
+              max-width: 1400px;
+              margin: 0 auto;
+            }
+        
+            .image-box {
+              background: var(--white);
+              padding: 25px;
+              border-radius: var(--border-radius);
+              box-shadow: var(--shadow);
+              transition: all 0.3s ease;
+              width: 400px;
+            }
+        
+            .image-box:hover {
+              transform: translateY(-8px);
+            }
+        
+            .image-box img {
+              width: 100%;
+              height: 250px;
+              object-fit: contain;
+              border-radius: 8px;
+              margin-bottom: 20px;
+          
+            }
+        
+            .image-box a {
+              display: inline-block;
+              padding: 14px 30px;
+              background-color: var(--primary-color);
+              color: var(--white);
+              text-decoration: none;
+              border-radius: 6px;
+              transition: all 0.3s ease;
+              font-weight: 600;
+              width: 100%;
+              text-align: center;
+              font-size: 18px;
+            }
+        
+            .image-box a:hover {
+              background-color: var(--primary-hover);
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            }
+        
+            @media (max-width: 1200px) {
+              .image-box {
+                width: 350px;
+              }
+            }
+        
+            @media (max-width: 900px) {
+              .container {
+                gap: 30px;
+              }
+              
+              .image-box {
+                width: 300px;
+              }
+            }
+        
+            @media (max-width: 768px) {
+              .container {
+                gap: 25px;
+              }
+              
+              .image-box {
+                width: 100%;
+                max-width: 400px;
+              }
+            }
+        
+            @media (max-width: 480px) {
+              body {
+                padding: 30px 15px;
+              }
+              
+              .image-box {
+                padding: 20px;
+              }
+              
+              .image-box img {
+                height: 200px;
+              }
+              
+              .image-box a {
+                padding: 12px 25px;
+                font-size: 16px;
+              }
+            }
+            
+
+
+
+
+
+
+
+        :root {
+            --primary-color: #00ff22;
+            --dark-green: #007a1a;
+            --light-green: #00ff55;
+            --panel-bg: #0a0a0a;
+            --text-color: #ffffff;
+            --border-color: rgba(0, 255, 34, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .image-box {
+            width: 350px;
+            background: var(--panel-bg);
+            border-radius: 15px;
+            border: 2px solid var(--primary-color);
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .image-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .image-box p {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .custom-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, var(--dark-green), var(--primary-color));
+            color: white;
+            text-decoration: none;
+            border-radius: 35px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            width: 100%;
+        }
+
+        .custom-btn:hover {
+            background: linear-gradient(135deg, var(--primary-color), var(--light-green));
+            transform: translateY(-3px);
+        }
+
+        .custom-btn:active {
+            transform: translateY(1px);
+        }
+
+        @media (max-width: 1200px) {
+            .image-box {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                gap: 20px;
+            }
+            
+            .image-box {
+                width: 280px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .image-box {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-box {
+                padding: 20px;
+            }
+            
+            .image-box p {
+                font-size: 1.3rem;
+            }
+            
+            .custom-btn {
+                padding: 12px 24px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-box">
+            <img src="IMAGE/h4x.png" alt="h4x">
+            <p>#Panel RYOD X66 C</p>
+            <a href="https://www.youtube.com/@RYOD-X66" class="custom-btn" target="_blank">Download Update</a>
+        </div>
+        <div class="image-box">
+            <img src="IMAGE/h4x2.png" alt="h4x">
+            <p>++Panel H4X C</p>
+            <a href="https://www.youtube.com/@RYOD-X66" class="custom-btn" target="_blank">Download Update</a>
+        </div>
+        <div class="image-box">
+            <img src="IMAGE/devo.png" alt="h4x">
+            <p>++Panel Devo C</p>
+            <a href="https://www.youtube.com/@RYOD-X66" class="custom-btn" target="_blank">Download Update</a>
+        </div>
+    </div>
+</body>
+</html>
+
+        
+
+
+    
+    <!DOCTYPE html>
+    <html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>تأثير الجسيمات مع الثلوج</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <style>
+      
+
+
+
+
+
+      
+            canvas {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+        </style>
+        
+    </head>
+    <body>
+    
+        <!-- إضافة الشعار -->
+    
+        <script>
+            let scene = new THREE.Scene();
+            let camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            let renderer = new THREE.WebGLRenderer({ alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+    
+            // إعداد الجسيمات (النجوم)
+            let particlesGeometry = new THREE.BufferGeometry();
+            let particlesCount = 0; // زيادة عدد الجسيمات
+            let positions = new Float32Array(particlesCount * 3);
+            let colors = new Float32Array(particlesCount * 3);
+    
+            for (let i = 0; i < particlesCount * 3; i++) {
+                positions[i] = (Math.random() - 0.5) * 1000;
+                colors[i] = Math.random();
+            }
+    
+            particlesGeometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+            particlesGeometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+    
+            let particlesMaterial = new THREE.PointsMaterial({
+                size: 2,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.8
+            });
+    
+            let particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+            scene.add(particlesMesh);
+    
+            // إعداد الجسيمات (الثلوج)
+            let snowGeometry = new THREE.BufferGeometry();
+            let snowCount = 300; // زيادة عدد الجسيمات
+            let snowPositions = new Float32Array(snowCount * 3);
+    
+            for (let i = 0; i < snowCount * 3; i++) {
+                snowPositions[i] = (Math.random() - 0.5) * 1000;
+            }
+    
+            snowGeometry.setAttribute("position", new THREE.BufferAttribute(snowPositions, 3));
+    
+            let snowMaterial = new THREE.PointsMaterial({
+                color: 0xffffff, // لون الثلج أبيض
+                size: 1.5,
+                transparent: true,
+                opacity: 0.8
+            });
+    
+            let snowMesh = new THREE.Points(snowGeometry, snowMaterial);
+            scene.add(snowMesh);
+    
+            camera.position.z = 5;
+    
+            function animateParticles() {
+                particlesMesh.rotation.y += 0.001;
+                particlesMesh.rotation.x += 0.001;
+    
+                let snowPositions = snowGeometry.attributes.position.array;
+                for (let i = 1; i < snowPositions.length; i += 3) {
+                    snowPositions[i] -= 2; // حركة الثلوج للأسفل
+                    if (snowPositions[i] < -500) snowPositions[i] = 500; // إعادة تعيين الموضع للأعلى
+                }
+                snowGeometry.attributes.position.needsUpdate = true;
+    
+                renderer.render(scene, camera);
+                requestAnimationFrame(animateParticles);
+            }
+    
+            animateParticles();
+    
+      
+        </script>
+    
+    </body>
+    </html>
+
+
+   
+    <!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>خلفية متساقطة لشعار نسرين</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at center, #ccff00 0%, #000 90%);
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* الحاوية في الخلفية */
+    .background-logo-fall {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0; /* تأكد أنها بالخلفية */
+      overflow: hidden;
+    }
+
+    .logo-fall {
+      position: absolute;
+      top: -50px;
+      width: 40px;
+      height: auto;
+      opacity: 0.07;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.1;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- حاوية الخلفية للشعار المتساقط -->
+  <div class="background-logo-fall" id="background-logo-fall"></div>
+
+  <!-- المحتوى الأمامي -->
+   </header>
+
+  <script>
+    const container = document.getElementById('background-logo-fall');
+
+    for (let i = 0; i < 40; i++) {
+      const flake = document.createElement('img');
+      flake.src = 'IMAGE/RY.png'; // تأكد من وجود الصورة في هذا المسار
+      flake.className = 'logo-fall';
+
+      // إعدادات عشوائية
+      const left = Math.random() * 100; // من 0 إلى 100%
+      const duration = 8 + Math.random() * 7; // من 8 إلى 15 ثانية
+      const delay = Math.random() * 5; // من 0 إلى 5 ثوانٍ
+      const size = 20 + Math.random() * 30; // حجم من 20 إلى 50 بكسل
+
+      flake.style.left = `${left}%`;
+      flake.style.animationDuration = `${duration}s`;
+      flake.style.animationDelay = `${delay}s`;
+      flake.style.width = `${size}px`;
+
+      container.appendChild(flake);
+    }
+  </script>
+
+</body>
+</html>
+
+
+    <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تأثير الجسيمات مع الثلوج</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #000;
+        }
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            width: 150px;
+            
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- إضافة الشعار -->
+
+
+   
+        
+        <div class="glow-effect"></div>
+    </div>
+</section>
+
+<style>
+/* أنماط عامة */
+.registration-section {
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Tajawal', sans-serif;
+    
+}
+
+/* بطاقة الاستمارة */
+.glowing-card {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.glow-effect {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 200, 0, 0.3), transparent 70%);
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    animation: rotate-glow 15s linear infinite;
+}
+
+@keyframes rotate-glow {
+    0% { transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+/* عناوين الاستمارة */
+.form-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.main-title {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
+}
+
+.sub-title {
+    color: #ffd700;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.animated-border {
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ffd700, transparent);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-border::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    animation: border-shine 3s infinite;
+}
+
+@keyframes border-shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* نموذج الإدخال */
+.modern-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-group {
+    position: relative;
+    flex: 1;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.floating {
+    position: relative;
+    height: 60px;
+}
+
+.floating input {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem 0.5rem 2.5rem;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.floating label {
+    position: absolute;
+    top: 50%;
+    right: 2.5rem;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.floating .input-icon {
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 215, 0, 0.7);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ffd700, #ff9800);
+    transition: all 0.3s ease;
+}
+
+/* تأثيرات حقول الإدخال */
+.floating input:focus ~ label,
+.floating input:valid ~ label {
+    top: 15px;
+    right: 1rem;
+    font-size: 0.8rem;
+    color: #ffd700;
+}
+
+.floating input:focus ~ .input-icon,
+.floating input:valid ~ .input-icon {
+    color: #ffd700;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.floating input:focus ~ .underline,
+.floating input:valid ~ .underline {
+    width: 100%;
+}
+
+/* زر الإرسال */
+.submit-btn {
+    position: relative;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #ff9800, #ffd700);
+    color: #1a1a2e;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+.send-icon {
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover .send-icon {
+    transform: translateX(5px);
+}
+
+.btn-effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    top: 0;
+    left: -100%;
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.submit-btn:hover .btn-effect {
+    left: 100%;
+}
+
+/* التكيف مع الهواتف */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .main-title {
+        font-size: 1.5rem;
+    }
+    
+    .sub-title {
+        font-size: 1.1rem;
+    }
+    
+    .glowing-card {
+        padding: 1.5rem;
+    }
+}
+</style>
+
+<!-- باقي المحتوى -->
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --text-color: #ffffff;
+            --card-bg: #0e0e0e;
+            --border-color: #00ff15;
+            --accent-color: #ffd700;
+            --social-bg: rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="light"] {
+            --bg-color: #f5f5f5;
+            --text-color: #333333;
+            --card-bg: #ffffff;
+            --border-color: #dddddd;
+            --accent-color: #ff9800;
+            --social-bg: rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Tajawal', sans-serif;
+            transition: all 0.5s ease;
+        }
+
+        /* زر تبديل الثيم */
+        .theme-switcher {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: var(--social-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .theme-switcher i {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        /* تعديلات لبقية العناصر لتتكيف مع الثيم */
+        .glowing-card {
+            background: var(--card-bg);
+            color: var(--text-color);
+            border-color: var(--border-color);
+        }
+
+        .floating input {
+            color: var(--text-color);
+            border-bottom-color: var(--border-color);
+        }
+
+        .floating label {
+            color: var(--text-color);
+        }
+
+        .socials a {
+            background: var(--social-bg);
+            color: var(--text-color);
+        }
+        body, html {
+    overflow-x: hidden;
+}
+
+    </style>
+</head>
+
+    
+    </script>
+</body>
+</html>
+
