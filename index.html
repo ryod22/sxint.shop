@@ -18,8 +18,8 @@
         /* Modern CSS Reset */
         :root {
             --primary: #003cff;
-            --primary-light: #00ff22;
-            --primary-dark: #00e600;
+            --primary-light: #ff0000;
+            --primary-dark: #ffffff;
             --secondary: #00b4ff;
             --secondary-light: #00e5ff;
             --secondary-dark: #0088cc;
@@ -27,7 +27,7 @@
             --darker: #0044ff;
             --light: #faf8f9;
             --gray: #6c757d;
-            --success: #28a745;
+            --success: #9fa728;
             --danger: #dc3545;
             --warning: #ffc107;
             --info: #b81788;
@@ -145,7 +145,7 @@
             top: 0;
             z-index: 1000;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-            border-bottom: 1px solid rgba(0, 255, 0, 0.3);
+            border-bottom: 1px solid rgba(255, 0, 0, 0.3);
             transition: all 0.4s ease;
         }
         
@@ -271,7 +271,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, rgba(0, 255, 64, 0.2) 0%, rgba(0, 0, 0, 0.9) 70%);
+            background: radial-gradient(circle, rgba(0, 26, 255, 0.2) 0%, rgba(0, 0, 0, 0.9) 70%);
             z-index: -1;
         }
         
@@ -322,7 +322,7 @@
             border-radius: 12px;
             padding: 2rem;
             transition: all 0.4s ease;
-            border: 1px solid rgba(0, 255, 34, 0.2);
+            border: 1px solid rgba(4, 0, 255, 0.2);
             position: relative;
             overflow: hidden;
         }
@@ -340,8 +340,8 @@
         
         .feature-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(25, 0, 255, 0.15);
-            border-color: rgba(0, 4, 255, 0.5);
+            box-shadow: 0 15px 30px rgba(255, 0, 0, 0.15);
+            border-color: rgba(255, 0, 0, 0.5);
         }
         
         .feature-icon {
@@ -451,11 +451,11 @@
         }
         
         .pricing-card {
-            background: rgba(20, 25, 40, 0.8);
+            background: rgba(0, 0, 0, 0.8);
             border-radius: 12px;
             overflow: hidden;
             transition: all 0.4s ease;
-            border: 1px solid rgba(21, 255, 0, 0.3);
+            border: 1px solid rgba(0, 17, 255, 0.3);
             position: relative;
         }
         
@@ -481,9 +481,9 @@
         
         .pricing-header {
             padding: 2rem;
-            background: rgba(0, 255, 34, 0.1);
+            background: rgba(255, 0, 0, 0.1);
             text-align: center;
-            border-bottom: 1px solid rgba(43, 255, 0, 0.2);
+            border-bottom: 1px solid rgba(255, 0, 0, 0.2);
         }
         
         .pricing-name {
@@ -972,7 +972,7 @@
         body {
           margin: 0;
           padding: 0;
-          background: radial-gradient(circle at center, #ccff00 0%, #000 90%);
+          background: radial-gradient(circle at center, #000000 0%, #000 90%);
           font-family: Arial, sans-serif;
           overflow-x: hidden;
           position: relative;
@@ -1159,9 +1159,10 @@
 
                     <li><a href="to update.html">Panel LifeTime</a></li>
                     <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#features">Features</a></li>
                     <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#features">Features</a></li>
                     <li><a href="#faq">FAQ</a></li>
+                    
                 </ul>
             </nav>
       
@@ -1171,11 +1172,11 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-content fade-in">
-            <h1>Dominate Free Fire With Our Elite Enhancement Suite</h1>
-            <p>Experience the most advanced, undetectable game enhancement tools with our premium panel. Join over 10,000 satisfied users worldwide.</p>
+            <h1>سيطر على لعبة فري فاير مع مجموعة من التحسينات المتميز</h1>
+            <p>استمتع بأحدث أدوات تحسين الألعاب وأكثرها تميزًا مع لوحتنا المتميزة. انضم إلى أكثر من 5,000 مستخدم راضٍ حول اللوحة.</p>
             <div class="hero-buttons">
-                <a href="#pricing" class="btn btn-primary">Get Started Now</a>
-                <a href="#features" class="btn btn-outline">Explore Features</a>
+                <a href="#pricing" class="btn btn-primary">ابدأ الآن</a>
+                <a href="#features" class="btn btn-outline">استكشاف الميزات</a>
 
             </div>
         </div>
@@ -1188,7 +1189,7 @@
     <section id="features" class="features section">
         <div class="container">
             <div class="section-title">
-                <h2>Premium Features</h2>
+                <h2>الميزات المتميزة</h2>
             </div>
             <div class="features-grid">
                 <!-- Feature 1 -->
@@ -1196,8 +1197,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-crosshairs"></i>
                     </div>
-                    <h3 class="feature-title">Advanced Aim Assist</h3>
-                    <p class="feature-desc">Our proprietary AI-powered aimbot provides pixel-perfect targeting with human-like movement patterns to avoid detection.</p>
+                    <h3 class="feature-title">مساعدة التصويب المتقدمة</h3>
+                    <p class="feature-desc">يوفر برنامج الهيدشوت الخاص بنا والمدعوم بالذكاء الاصطناعي استهدافًا دقيقًا مع أنماط حركة تشبه الإنسان لتجنب الاكتشاف.</p>
                 </div>
                 
                 <!-- Feature 2 -->
@@ -1205,8 +1206,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-user-shield"></i>
                     </div>
-                    <h3 class="feature-title">Undetectable Shield</h3>
-                    <p class="feature-desc">Military-grade encryption and randomized behavior patterns ensure complete anonymity and protection from bans.</p>
+                    <h3 class="feature-title">درع غير قابل للكشف</h3>
+                    <p class="feature-desc">يضمن التشفير العسكري وأنماط السلوك العشوائية إخفاء الهوية بشكل كامل والحماية من الحظر.</p>
                 </div>
                 
                 <!-- Feature 3 -->
@@ -1214,8 +1215,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-broadcast-tower"></i>
                     </div>
-                    <h3 class="feature-title">3D ESP Radar</h3>
-                    <p class="feature-desc">See enemy positions, loot, and vehicles through walls with our advanced 3D environmental sensing technology.</p>
+                    <h3 class="feature-title">رادار ESP ثلاثي الأبعاد</h3>
+                    <p class="feature-desc">شاهد مواقع العدو والغنائم والمركبات من خلال الجدران باستخدام تقنية الاستشعار البيئي ثلاثية الأبعاد المتقدمة لدينا.</p>
                 </div>
                 
                 <!-- Feature 4 -->
@@ -1223,8 +1224,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-tachometer-alt-fast"></i>
                     </div>
-                    <h3 class="feature-title">Performance Boost</h3>
-                    <p class="feature-desc">Optimize game performance with our FPS booster and network latency reduction tools for smoother gameplay.</p>
+                    <h3 class="feature-title">تعزيز الأداء</h3>
+                    <p class="feature-desc">قم بتحسين أداء اللعبة باستخدام معزز " ف ب س " وأدوات تقليل زمن الوصول إلى الشبكة للحصول على تجربة لعب أكثر سلاسة.</p>
                 </div>
                 
                 <!-- Feature 5 -->
@@ -1232,8 +1233,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-ghost"></i>
                     </div>
-                    <h3 class="feature-title">Ghost Mode</h3>
-                    <p class="feature-desc">Move silently, become invisible to enemy radar, and gain temporary invulnerability with our elite ghost protocols.</p>
+                    <h3 class="feature-title">وضع الشبح</h3>
+                    <p class="feature-desc">تحرك بصمت، وكن غير مرئي لرادار العدو، واحصل على حصانة مؤقتة بفضل بروتوكولات الأشباح النخبوية لدينا.</p>
                 </div>
                 
                 <!-- Feature 6 -->
@@ -1241,8 +1242,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-sync-alt"></i>
                     </div>
-                    <h3 class="feature-title">Auto-Updates</h3>
-                    <p class="feature-desc">Our system automatically updates to bypass the latest game patches, ensuring uninterrupted service.</p>
+                    <h3 class="feature-title">التحديثات التلقائية</h3>
+                    <p class="feature-desc">يقوم نظامنا بالتحديث تلقائيًا لتجاوز أحدث تصحيحات اللعبة، مما يضمن خدمة مستمرة.</p>
                 </div>
             </div>
         </div>
@@ -1259,8 +1260,8 @@
                 <div class="step slide-up">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3>Download & Install</h3>
-                        <p>Get our lightweight client (less than 5MB) that runs seamlessly in the background without affecting game performance.</p>
+                        <h3>تنزيل وتثبيت</h3>
+                        <p>احصل على عميلنا خفيف الوزن (أقل من 5 ميجا بايت) الذي يعمل بسلاسة في الخلفية دون التأثير على أداء اللعبة.</p>
                     </div>
                 </div>
                 
@@ -1268,8 +1269,8 @@
                 <div class="step slide-up delay-1">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Customize Your Settings</h3>
-                        <p>Use our intuitive control panel to adjust features to your playstyle. Presets available for beginners to pros.</p>
+                        <h3>تخصيص إعداداتك</h3>
+                        <p>استخدم لوحة التحكم سهلة الاستخدام لضبط الميزات بما يتناسب مع أسلوب لعبك. تتوفر إعدادات مسبقة تناسب جميع المستويات، من المبتدئين إلى المحترفين.</p>
                     </div>
                 </div>
                 
@@ -1277,8 +1278,8 @@
                 <div class="step slide-up delay-2">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Launch & Dominate</h3>
-                        <p>Start the game through our launcher and experience the competitive edge with our advanced enhancement tools.</p>
+                        <h3>الإطلاق والسيطرة</h3>
+                        <p>ابدأ اللعبة من خلال برنامج التشغيل الخاص بنا واستمتع بالميزة التنافسية باستخدام أدوات التحسين المتقدمة لدينا.</p>
                     </div>
                 </div>
             </div>
@@ -1301,14 +1302,14 @@
                     </div>
                     <div class="pricing-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> Basic Aim Assist</li>
-                            <li><i class="fas fa-check"></i> Limited ESP Radar</li>
-                            <li><i class="fas fa-check"></i> Standard Protection</li>
-                            <li><i class="fas fa-check"></i> Email Support</li>
-                            <li><i class="fas fa-check"></i> Priority Support</li>
-                            <li><i class="fas fa-check"></i> Weekly Updates</li>
+                            <li><i class="fas fa-check"></i> AimBot Extrnal</li>
+                            <li><i class="fas fa-check"></i> 3D ESP Radar</li>
+                            <li><i class="fas fa-check"></i> Awm Scope</li>
+                            <li><i class="fas fa-check"></i> Fast Switsch</li>
+                            <li><i class="fas fa-check"></i> Awm No Scope</li>
+                            <li><i class="fas fa-check"></i> Camera Lift</li>
                         </ul>
-                        <a href="signup.html" class="btn btn-outline">Choose Plan</a>
+                        <a href="signup.html" class="btn btn-primary">Choose Plan</a>
                     </div>
                 </div>
                 
@@ -1321,12 +1322,12 @@
                     </div>
                     <div class="pricing-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> Advanced Aim Assist</li>
-                            <li><i class="fas fa-check"></i> Full ESP Radar</li>
-                            <li><i class="fas fa-check"></i> Enhanced Protection</li>
-                            <li><i class="fas fa-check"></i> Ghost Mode</li>
-                            <li><i class="fas fa-check"></i> Priority Support</li>
-                            <li><i class="fas fa-check"></i> Daily Updates</li>
+                            <li><i class="fas fa-check"></i> AimBot Extrnal</li>
+                            <li><i class="fas fa-check"></i> 3D ESP Radar</li>
+                            <li><i class="fas fa-check"></i> Awm Scope</li>
+                            <li><i class="fas fa-check"></i> Fast Switsch</li>
+                            <li><i class="fas fa-check"></i> Awm No Scope</li>
+                            <li><i class="fas fa-check"></i> Camera Lift</li>
                         </ul>
                         <a href="signup.html" class="btn btn-primary">Choose Plan</a>
                     </div>
@@ -1341,14 +1342,14 @@
                     </div>
                     <div class="pricing-features">
                         <ul>
-                            <li><i class="fas fa-check"></i> All Pro Features</li>
-                            <li><i class="fas fa-check"></i> Auto Config Profiles</li>
-                            <li><i class="fas fa-check"></i> VIP Support</li>
-                            <li><i class="fas fa-check"></i> Instant Updates</li>
-                            <li><i class="fas fa-check"></i> Exclusive Features</li>
-                            <li><i class="fas fa-check"></i> Custom Scripts</li>
+                            <li><i class="fas fa-check"></i> AimBot Extrnal</li>
+                            <li><i class="fas fa-check"></i> 3D ESP Radar</li>
+                            <li><i class="fas fa-check"></i> Walhack</li>
+                            <li><i class="fas fa-check"></i> Speed x10</li>
+                            <li><i class="fas fa-check"></i> Speed joystik</li>
+                            <li><i class="fas fa-check"></i> Fast Schot</li>
                         </ul>
-                        <a href="signup.html" class="btn btn-outline">Choose Plan</a>
+                        <a href="signup.html" class="btn btn-primary">Choose Plan</a>
                     </div>
                 </div>
             </div>
@@ -1361,61 +1362,61 @@
     <section id="faq" class="faq section">
         <div class="container">
             <div class="section-title">
-                <h2>Frequently Asked Questions</h2>
+                <h2>الأسئلة الشائعة</h2>
             </div>
             <div class="accordion">
                 <!-- FAQ 1 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <span>Is this detectable by the game's anti-cheat system?</span>
+                        <span>هل يمكن اكتشاف ذلك من خلال نظام مكافحة الغش في اللعبة؟</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>Our system uses military-grade encryption and randomized behavior patterns that make it virtually undetectable. We've had zero reported bans in the past 8 months across our 10,000+ user base when used according to our guidelines.</p>
+                        <p>يستخدم نظامنا تشفيرًا عسكريًا وأنماط سلوك عشوائية تجعله شبه خفي. لم نتلقَّ أيَّ حظر مُبلَّغ عنه خلال الأشهر الثمانية الماضية لقاعدة مستخدمينا التي يزيد عددها عن 5,000 مستخدم، وذلك عند استخدامه وفقًا لإرشاداتنا.</p>
                     </div>
                 </div>
                 
                 <!-- FAQ 2 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <span>How often do you update the software?</span>
+                        <span>كم مرة تقوم بتحديث البرنامج؟</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>We release minor updates weekly and major updates within 24 hours of any game patch. Our Elite plan users receive instant updates automatically, while other plans get updates within 1-3 days depending on their subscription level.</p>
+                        <p>نُصدر تحديثات بسيطة أسبوعيًا وتحديثات رئيسية خلال ٢٤ ساعة من أي تحديث للعبة. يحصل مشتركو باقة Elite على تحديثات فورية تلقائيًا، بينما تحصل الباقات الأخرى على تحديثات خلال يوم إلى ثلاثة أيام، حسب مستوى اشتراكهم.</p>
                     </div>
                 </div>
                 
                 <!-- FAQ 3 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <span>Can I use this on multiple devices?</span>
+                        <span>هل يمكنني استخدام هذا على أجهزة متعددة؟</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>Each license is valid for one device at a time. However, you can transfer your license to a new device up to 3 times per month through your account dashboard.</p>
+                        <p>كل ترخيص صالح لجهاز واحد في كل مرة. مع ذلك، يمكنك نقل ترخيصك إلى جهاز جديد حتى ثلاث مرات شهريًا عبر لوحة معلومات حسابك.</p>
                     </div>
                 </div>
                 
                 <!-- FAQ 4 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <span>What payment methods do you accept?</span>
+                        <span>ما هي طرق الدفع التي تقبلونها؟</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>We accept all major credit cards, PayPal, Bitcoin, and other cryptocurrencies for maximum privacy. All payments are processed through secure, encrypted channels.</p>
+                        <p>نقبل جميع بطاقات الائتمان الرئيسية، وPayPal، وBitcoin، وغيرها من العملات المشفرة لضمان أقصى درجات الخصوصية. تتم معالجة جميع المدفوعات عبر قنوات آمنة ومشفرة.</p>
                     </div>
                 </div>
                 
                 <!-- FAQ 5 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <span>Do you offer refunds?</span>
+                        <span>هل تقدمون استرداد الأموال؟</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="accordion-content">
-                        <p>We offer a 2-day money-back guarantee for all new subscribers. After this period, we can offer prorated refunds for unused time in special circumstances - contact our support team for assistance.</p>
+                        <p>نقدم ضمان استرداد الأموال لمدة يومين لجميع المشتركين الجدد. بعد هذه الفترة، يُمكننا تقديم استرداد نسبي للوقت غير المُستخدم في ظروف خاصة - تواصل مع فريق الدعم لدينا للحصول على المساعدة.</p>
                     </div>
                 </div>
             </div>
@@ -1433,8 +1434,8 @@
             <div class="footer-content">
                 <!-- Column 1 -->
                 <div class="footer-column">
-                    <h3>ELITE FF</h3>
-                    <p>The most advanced Free Fire enhancement platform, trusted by competitive players worldwide.</p>
+                    <h3>النخبة FF</h3>
+                    <p>منصة تحسين فري فاير  الأكثر تقدمًا، والتي يثق بها اللاعبون التنافسيون في جميع أنحاء اللعبة.</p>
                     <div class="social-links">
                         <a href="https://discord.gg/MhpEhTV5Nc"><i class="fab fa-discord"></i></a>
                         <a href="https://www.youtube.com/@RYOD-X66"><i class="fab fa-youtube"></i></a>
@@ -1443,7 +1444,7 @@
                 
                 <!-- Column 2 -->
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3>روابط سريعة</h3>
                     <ul class="footer-links">
                         <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
                         <li><a href="#how-it-works"><i class="fas fa-chevron-right"></i> How It Works</a></li>
@@ -1454,7 +1455,7 @@
                 
                 <!-- Column 3 -->
                 <div class="footer-column">
-                    <h3>Contact Us</h3>
+                    <h3>اتصل بنا</h3>
                     <ul class="footer-links">
                         <li><a href="#"><i class="fas fa-envelope"></i> ryodx666@gmail.com</a></li>
                         <li><a href="#"><i class="fas fa-comment-alt"></i> Discord Support</a></li>
@@ -1466,7 +1467,7 @@
            
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Elite FF Premium Enhancement. Not affiliated with Garena or Free Fire. All game content and trademarks are property of their respective owners.</p>
+                <p>&copy; تحسينات مميزة.  غير تابعة لـغارينا أوفري فاير. جميع محتويات اللعبة والعلامات التجارية ملك لأصحابها.</p>
             </div>
         </div>
     </footer>
